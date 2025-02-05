@@ -49,7 +49,10 @@ body {
 }
 
 .form-container .form-group input[type="text"],
-.form-container .form-group input[type="password"] {
+.form-container .form-group input[type="password"],
+.form-container .form-group input[type="number"],
+.form-container .form-group input[type="date"],
+.form-container .form-group select {
     width: 100%;
     height: 2rem;
     border: 1.6px solid #6f6e6e9a;
@@ -101,7 +104,11 @@ body {
 }
 
 .form-container .form-group input[type="text"]:focus,
-.form-container .form-group input[type="password"]:focus{
+.form-container .form-group input[type="password"]:focus,
+.form-container .form-group input[type="number"]:focus,
+.form-container .form-group input[type="date"]:focus,
+.form-container .form-group input[type="number"],
+.form-container .form-group select:focus{
     border-color: #5f6fff;
 }
 

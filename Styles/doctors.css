@@ -221,7 +221,9 @@
     transform: scale(1.05);
 }
 
-
+.doc .doc-info .doc-qual{
+    text-transform: uppercase;
+}
 @media (max-width:622px){
 #left_banner{
 

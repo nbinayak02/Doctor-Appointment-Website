@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dr Appoint</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Styles/nav-bar.css">
+    <link rel="stylesheet" href="../Styles/admin-index.css">
+    <style>
+        nav .menus {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 3rem;
+        }
+
+        nav {
+            box-shadow: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
+        <span id="admin-panel">Admin Panel</span>
+        <div class="menus">
+            <span class="profile"><a href="./login.html">Logout</a></span>
+        </div>
+    </nav>
+
+    <!-- sidepanel -->
+    <section class="sidepanel">
+        <i class='bx bx-collapse-horizontal'></i>
+        <ul>
+            <li><i class='bx bx-task'></i><span class="text">Appointments</span></li>
+            <li><i class='bx bxs-user-rectangle'></i><span class="text">Doctors</span></li>
+            <li><i class='bx bx-add-to-queue'></i><span class="text">Categories</span></li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class="top-section">
+            <button><a href="./add.html">Add Doctor</a></button>
+            <button style="background-color: rgb(245, 137, 5)"><a href="./add.html">Add Doctor</a></button>
+            <button style="background-color: rgb(190, 6, 6);"><a href="./add.html">Add Doctor</a></button>
+        </div>
+        <div class="heading">All Doctors</div>
+        <div class="doctors">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae obcaecati consectetur atque quaerat impedit quidem ipsam nesciunt modi, quos vero quam architecto eveniet aspernatur. Distinctio beatae nihil soluta, illum ratione eaque, ducimus esse error hic expedita voluptatibus et sed? Dolores doloribus commodi vitae, quia natus sapiente facere velit eligendi officia voluptatibus nihil corrupti culpa iste, alias consequatur placeat reprehenderit hic repudiandae! Quae repellat sed labore deserunt tenetur odio sequi laborum officiis, dignissimos magnam consequatur totam explicabo necessitatibus, eius, ipsam dolorum quia aspernatur beatae eaque autem commodi nam ab. Ipsam amet libero earum distinctio placeat asperiores tempore doloremque perferendis possimus est similique explicabo fugiat eum quas, ducimus eos sapiente quasi ut esse. Nisi dolorum repellat incidunt, accusamus similique cum earum nemo vero praesentium rerum cupiditate ex sequi exercitationem laboriosam ipsam tenetur reprehenderit veritatis quis officiis consequuntur reiciendis? Nisi minus ducimus atque, voluptatibus voluptatem voluptate molestiae molestias deleniti porro dicta magni animi hic provident, amet iure officiis ad quos? Ea omnis ab soluta illum asperiores enim magni dignissimos adipisci deleniti dolores rem suscipit aliquid, corrupti, debitis natus sint voluptatum minus amet illo quam deserunt et veritatis vero? Reprehenderit, soluta? Maiores nam, magni mollitia, vitae et quaerat accusantium quis veritatis explicabo sed quae placeat saepe asperiores non minus nostrum aliquam ab autem molestias! Quam quas obcaecati excepturi atque officiis earum suscipit, officia quisquam dolorem laborum velit fugiat nisi labore minima, pariatur nam sunt aliquam. Pariatur repudiandae similique quos accusantium quae excepturi qui reprehenderit vitae aspernatur, doloremque minima quas expedita quasi perspiciatis. Ab beatae laudantium natus illo voluptatum, deserunt nesciunt, inventore consectetur amet ipsam voluptatem ipsa perspiciatis itaque minima libero. Consequatur deleniti quaerat consectetur esse veniam sunt, corrupti dicta necessitatibus error consequuntur minus expedita voluptatibus ipsa id quod architecto sint itaque facere distinctio blanditiis? Placeat corrupti recusandae quasi perspiciatis vero ducimus esse sapiente minus.</div>
+    </section>
+    <script src="../Scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        var isDisplaying = true;
+
+        $(document).ready(function(){
+            $(".bx-collapse-horizontal").click(function(){
+                if(isDisplaying){
+                    //if true then hide on click
+                    $(".text").fadeOut(100);
+                    $(".sidepanel").animate({
+                        width:90
+                    });
+                    isDisplaying = false;
+                } else{
+                    $(".sidepanel").animate({
+                        width:261
+                    });
+                    $(".text").show(1000);
+                    isDisplaying = true;
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -6,53 +6,49 @@
     font-family: "Raleway", serif;
 }
 
-body {
-    background-color: #706e6e23;
-    overflow: hidden;
-}
-
 #admin-panel {
     width: 8rem;
     margin-left: 3rem;
     font-weight: 600;
+    color:rgba(21, 20, 20, 0.454);
 }
 
-.sidepanel{
-    margin-top: 5px;
-    width: 17%;
-    height:100vh;
-    float: left;
+.content{
     background-color: #fff;
 }
 
-.sidepanel .bx-collapse-horizontal{
-    float: right;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.sidepanel .bx-collapse-horizontal:hover{
-    color: #5f6fff;
-}
-.sidepanel ul li{
-    font-size: 1.1rem;
-    margin-top: 4rem;
-    list-style-type: none;
-    padding-left: 2rem;
+.content .heading {
+    font-size: 1.4rem;
     font-weight: 600;
-    transition: 0.2s;
+    margin-top: 1rem;
+    margin-left: 3rem;
 }
-
-.sidepanel ul li i{
-    font-size: 1.8rem;
-    position: relative;
-    top: 0.5rem;
+.content .top-section{
+    float: right;
+    height: 3rem;
+    line-height: 3rem;
     margin-right: 1rem;
 }
-.sidepanel ul li:hover{
-    color: #5f6fff;
+
+.content .top-section button{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #5f6fff;
     cursor: pointer;
+    transition: 0.2s;
+    margin: 0.6rem;
+}
+
+.content .top-section button a{
+text-decoration: none;
+color: #fff;
+}
+
+.content .top-section button:hover {
+transform: scale(1.05);
 }
