@@ -1,0 +1,89 @@
+body{
+    background: #e4e2e2 !important;
+}
+
+#container{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  
+  }
+  
+  #left{
+      background: #fff;
+      /* border: 2px solid red; */
+      height: 90vh;
+      width: 20vw;
+  }
+
+  #left a {
+    text-decoration: none !important;
+  }
+  #dashboard{
+    margin-top: 1.5rem;
+  }
+  .left_icon{
+    background: #fff !important;
+  }
+
+  .left_icon img {
+    margin-left: 2rem;
+}
+.left_icon h3 {
+    font-weight: 650;
+}
+  
+.btn {
+    position: relative;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    height: 3rem;
+    /* margin-left: 2rem; */
+    color: #545151;
+    background: #fff !important;
+}
+
+.btn::after{
+content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1px;
+  width: 0px;
+  height: 3rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+  transform: translateY(-50%);
+        
+
+}
+
+.btn:hover::after,
+.btn.active::after{
+background-color: #5f6fff; /* Change color on hover */
+width: 15px; /* Optionally, make it wider */
+}
+.btn.active {
+    background-color: #e4e2e2 !important;/* Darker blue for active button */
+}
+
+.btn:hover {
+    background-color: #e4e2e2 !important;
+}
+.ap_time_btn {
+    margin-left: 13px;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    height: 25px;
+    width: 70px;
+    border-radius: 15px;
+    border: 1.5px solid #ada7a7;
+    background: transparent;
+    color: #5e5a5a;
+    cursor: pointer;
+}
