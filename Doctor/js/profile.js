@@ -17,6 +17,26 @@ var address=document.getElementById("address");
 var available_btn=document.getElementById("doc_available");
 
 
+// to upload the profile picture of doctor
+var profile_pic_button=document.getElementsByClassName("Custom_Profile");
+
+var upload_pic=document.getElementById("upload_pic");
+
+upload_pic.addEventListener('change', function(event){
+  const file=event.target.files[0];
+  if(file){
+    const reader= new FileReader();
+
+    reader.onload= function(event){
+      document.getElementById("profile_picture").src=event.target.result;
+
+    };
+    reader.readAsDataURL(file);
+  }
+
+});
+
+
 
 edit_btn.addEventListener('click',function(){
 
@@ -35,6 +55,8 @@ address.contentEditable="true";
   
   save_btn.style.display="block";
 
+  profile_pic_button[0].style.display="inline-block";
+
 
 
 
@@ -52,6 +74,8 @@ fee.contentEditable="false";
 address.contentEditable="false";
   doctor_about.classList.remove("Editing");
  edit_btn.style.display="block";
+
+ profile_pic_button[0].style.display="none";
 
 }
 )

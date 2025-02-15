@@ -244,3 +244,27 @@ input[type="checkbox"]:checked {
         accent-color:#5f6fff;
         
     }
+#upload_pic{
+    display: none;
+}
+    .Custom_Profile{
+        /* display: inline-block; */
+        display: none;
+        padding: 10px 20px;
+        background-color: #5f6fff;
+        color: white;
+        font-size: 16px;
+        border-radius: 7px;
+        cursor: pointer;
+        /* transition: 0.3s; */
+        position: relative;
+        bottom: 2.8rem;
+        left: 2.5rem;
+
+    }
+
+    .Custom_Profile:hover{
+        scale: 1;
+        background-color: #485aff;
+        transition: all 0.2s ease-in-out;
+    }

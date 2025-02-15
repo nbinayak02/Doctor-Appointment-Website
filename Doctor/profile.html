@@ -61,7 +61,7 @@
     
     <div id="left">
       
-      <a href="./index.html" ><div id="dashboard" class="left_icon"><button class="btn btn_secondary"><img src="./images/home_icon.svg" alt="Dashboard"><h3>Dashboard</h3></button></div></a>
+      <a href="./index.html" ><div id="dashboard" class="left_icon"><button class="btn btn_secondary"><img id="profile_pic" src="./images/home_icon.svg" alt="Dashboard"><h3>Dashboard</h3></button></div></a>
       <a href="./appointment.html"><div id="appointments" class="left_icon"><button class="btn btn_secondary"><img src="./images/appointment_icon.svg" alt="Dashboard"><h3>Appointments</h3></button></div></a>
       <a href="./profile.html"><div id="profile" class="left_icon"><button class="btn btn_secondary"><img src="./images/people_icon.svg" alt="Dashboard"><h3>Profile</h3></button></div></a>
   </div>
@@ -70,7 +70,9 @@
 <div id="doctor_container">
 
   <div class="doctor-img">
-    <img src="../Assets/Images/doctor.png" alt="doctor-image">
+    <img id="profile_picture" src="../Assets/Images/doctor.png" alt="doctor-image">
+    <label for="upload_pic" class="Custom_Profile">Change Profile</label>
+    <input type="file" id="upload_pic" accept="image/*">
   </div>
 
   <div class="dr-info">
