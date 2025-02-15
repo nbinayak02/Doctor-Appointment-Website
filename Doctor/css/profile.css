@@ -1,6 +1,32 @@
 body{
     background: #e4e2e2 !important;
 }
+
+.menu-dropdown .menus {
+    height: 10rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_menu {
+    border: none;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    /* display: block; */
+    transition: all 0.2s ease-in-out;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav .menus {
+    justify-content: flex-end !important;
+    margin-right: 1rem !important;
+}
 .ap_time_btn {
 
     margin-left: 13px;

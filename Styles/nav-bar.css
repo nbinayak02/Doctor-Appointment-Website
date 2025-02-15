@@ -153,6 +153,21 @@ nav .menus .menu-item {
         scale: 1.4;
     }
 
+    /* small doctor logo */
+    .ap_time_btn {
+        margin-left: 13px;
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 13.3333px;
+        height: 17.6px;
+        width: 70px;
+        border-radius: 15px;
+        border: 1.5px solid #ada7a7;
+        background: transparent;
+        color: #5e5a5a;
+        cursor: pointer;
+    }
+
     /* make small search bar  */
     nav .menus .search-bar input {
         display: none;
@@ -179,6 +194,10 @@ nav .menus .menu-item {
     }
 
     nav .menus .menu-item {
+        display: none;
+    }
+
+    .ap_time_btn {
         display: none;
     }
 }

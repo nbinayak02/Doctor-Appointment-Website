@@ -87,3 +87,57 @@ width: 15px; /* Optionally, make it wider */
     color: #5e5a5a;
     cursor: pointer;
 }
+
+@media (max-width:891px){
+  .btn{
+      gap: 0.3rem;
+
+  }
+  .left_icon img {
+    margin-left: 0.5rem;
+}
+
+}
+
+
+
+
+@media (max-width: 431px) {
+  .left_icon img {
+      margin-left: 0.2rem;
+  }
+}
+
+
+@media(max-width:740px){
+  #container {
+      gap: 1rem;
+  }
+}
+@media (max-width: 439px) {
+  #container {
+      gap: 0.6rem;
+  }
+}
+
+@media (max-width:724px){
+  .left_icon h3 {
+    display: none;
+}
+.btn{
+  width: 100%;
+}
+#left {
+  background: #fff;
+  /* border: 2px solid red; */
+  height: 90vh;
+  width: 10vw;
+}
+}
+
+@media (max-width:536px){
+  .btn:hover::after, .btn.active::after {
+    background-color: #5f6fff;
+    width: 5px;
+}
+}
