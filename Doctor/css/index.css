@@ -235,4 +235,15 @@ border: none;
     }
 }
 
+@media (max-width:402px){
+    #left {
+      display: none;
+  }
+
+  #right {
+    /* border: 2px solid red; */
+    margin-left: 1rem;
+}
+}
+
 

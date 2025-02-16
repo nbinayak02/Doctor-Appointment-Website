@@ -148,7 +148,7 @@ font-weight: 650;
 
 #right{
 /* border: 2px solid red; */
-width: 50vw;
+width: fit-content;
 }
 
 #doctor_container{
@@ -232,7 +232,8 @@ margin-top: 0.4rem;
 
 }
 .about_doctor{
-width: 45vw;
+    margin-right: 1rem;
+    width: 60vw;
 text-indent: 0rem;
 padding-left: 2rem;
 text-align: justify;
@@ -293,4 +294,32 @@ input[type="checkbox"]:checked {
         scale: 1;
         background-color: #485aff;
         transition: all 0.2s ease-in-out;
+    }
+    @media (max-width: 768px) {
+        .doc-desc .exp {
+            margin-left: 2rem !important;
+            width: fit-content;
+        }
+    }
+
+    @media (max-width:518px){
+        .about_doctor{
+
+            width: 70vw;
+        }
+    }
+    @media (max-width:402px){
+        .about_doctor{
+
+            width: 72vw;
+        }
+        input[type="checkbox"] {
+            margin-top: 0.5rem;
+            margin-left: 2rem;
+        }
+        .dr-info .doc-about .a-fee {
+            font-weight: 580 !important;
+            font-size: 1rem !important;
+            margin-top: 0.5rem;
+        }
     }

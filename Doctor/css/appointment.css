@@ -75,7 +75,8 @@ margin-top: 1.1rem;
     display: flex;
     flex-direction: column;
     height: 84.4vh;
-    width: 70vw;
+    margin-right: 2rem;
+    /* width: 80vw; */
 }
   
   .cash {
@@ -135,4 +136,155 @@ margin-top: 1.1rem;
     background: rgb(104, 236, 104);
     scale: 1.1;
     transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width:1268px){
+  #ap_list_heading {
+    grid-gap: 0rem;
+
+}
+#patient_list {
+  grid-gap: 0rem;
+
+}
+}
+
+@media (max-width:948px){
+  .btn {
+    gap: 0.3rem !important;
+}
+}
+@media (max-width:1105px){
+  .left_icon h3 {
+    display: none !important;
+}
+
+.btn {
+  width: 100% !important;
+}
+.left_icon img {
+  margin-left: 0.5rem !important; 
+}
+
+    #left {
+        background: #fff;
+        /* border: 2px solid red; */
+        height: 90vh;
+        width: 10vw;
+    }
+}
+
+@media (max-width:980px){
+  /* .left_icon h3 {
+    display: none !important;
+} */
+
+.btn:hover::after, .btn.active::after {
+  background-color: #5f6fff;
+  width: 15px;
+}
+
+
+}
+
+@media (max-width:860px){
+
+  .btn:hover::after, .btn.active::after {
+    background-color: #5f6fff;
+    width: 5px;
+  }
+}
+
+@media (max-width:720px){
+  #appoint_list {
+    margin-right: 0.5rem;
+    width: 86vw;
+}
+}
+
+@media (max-width:684px){
+  #appoint_date{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+}
+
+@media(max-width:642px){
+
+  #acp_rej {
+    gap: 0rem;
+}
+
+#acp_rej button {
+  height: 37px;
+  width: 37px;
+
+}
+
+#acp_rej button img {
+  position: relative;
+  right: 0px;
+  top: 4px;
+  height: 35px;
+  width: 35px;
+}
+
+#appoint_date{
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.cash {
+  margin-left: 2px;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  height: 23px;
+  width: 46px;
+}
+#ap_list_heading h4 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+}
+
+@media (max-width:520px){
+  #patient_list {
+    grid-gap: 0rem;
+    font-size: 14px;
+}
+#container {
+  gap: 0.6rem;
+}
+}
+
+@media (max-width:450px){
+  #left {
+    display: none;
+}
+
+#container {
+  gap: 0.6rem;
+  margin-left: 1rem;
+}
+}
+
+@media (max-width:445px){
+  #left {
+    /* display: none; */
+    width: 9vw;
+}
+#container {
+  gap: 0.3rem;
+}
+.btn:hover::after, .btn.active::after {
+  background-color: #5f6fff;
+  width: 2.8px;
+}
 }
