@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorPanel</title>
+
+    <!-- integrating react in html page -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    
+
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/panel.css">
+
+  <link rel="stylesheet" href="../Styles/nav-bar.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../Styles/footer.css">
+  <link rel="stylesheet" href="../Styles/dr.css">
+
+  <style>
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav>
+    <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
+    <button type="button" class="ap_time_btn" id="ap_time_btn1"><span>Doctor</span></button>
+    <div class="menus">
+      <!-- <span class="menu-item under_hover"><a href="../index.html">Home</a></span>
+      <span class="menu-item under_hover"><a href="../p/doctor.html">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="../p/about.html">About</a></span>
+      <span class="menu-item under_hover"><a href="../p/contact.html">Contact</a></span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span> -->
+      <span class="profile"><a href="./p/login.html">Logout</a></span>
+      <span id="menu-icon"><i class='bx bx-menu'></i></span>
+    </div>
+  </nav>
+
+  <div class="menu-dropdown">
+    <div class="menus">
+      <span class="menu-item under_hover"><div class="menu_menu"><img src="./images/home_icon.svg"><a href="./index.html">Dashboard</a></div></span>
+      <span class="menu-item under_hover"><div class="menu_menu"><img src="./images/appointment_icon.svg"><a href="./appointment.html">Appointments</a></div></span>
+      <span class="menu-item under_hover"><div class="menu_menu"><img src="./images/people_icon.svg"><a href="./profile.html">Profile</a></div></span>
+      <!-- <span class="menu-item under_hover"><a href="../p/contact.html">Contact</a></span> -->
+      <!-- <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span> -->
+    </div>
+  </div>
+  <!-- end of navigation bar -->
+
+
+  <div id="container">
+
+    
+    <div id="left">
+      
+      <a href="./index.html"><div id="dashboard" class="left_icon"><button class="btn btn_secondary"><img src="./images/home_icon.svg" alt="Dashboard"><h3>Dashboard</h3></button></div></a>
+      <a href="./appointment.html"><div id="appointments" class="left_icon"><button class="btn btn_secondary"><img src="./images/appointment_icon.svg" alt="Dashboard"><h3>Appointments</h3></button></div></a>
+      <a href="./profile.html"><div id="profile" class="left_icon"><button class="btn btn_secondary"><img src="./images/people_icon.svg" alt="Dashboard"><h3>Profile</h3></button></div></a>
+  </div>
+  
+  <div id="right">
+    
+    <div id="right_container">
+
+      <div id="Earning" class="right_icon">
+        <div id="right_left"><Img src="./images/earning_icon.svg" alt="Earning"> </div>
+        <div id="right_right"><h3><span>RS:</span><span id="earning_update">80</span></h3><h4>Earnings</h4></div>
+      </div>
+
+      <a href="./appointment.html" id="Appointments" class="right_icon">
+        <div id="right_left"><Img src="./images/appointments_icon.svg" alt="Appointments"> </div>
+        <div id="right_right"><h3 id="appoint_update">4</h3><h4>Appointments</h4></div>
+      </a>
+  
+      <a href="./appointment.html" id="Patients" class="right_icon">
+        <div id="right_left"><Img src="./images/patients_icon.svg" alt="Patients"> </div>
+        <div id="right_right"><h3 id="patient_update">2</h3><h4>Patients</h4></div>
+        </a>
+    </div>
+
+    <div id="booking_container">
+   <div id="book_head"><img src="./images/list_icon.svg " alt="Lists"><h4>Latest Booking</h4></div>
+   <div id="book_list">
+
+    <div id="patient_list">
+      <img src="../Assets/Images/medicine.png" height="46px" width="52px" alt="Photo">
+      <div id="pt_detail"><h4>Samir Khadka</h4><h5>Booking on <span id="ap_date">5 oct 2024</span></h5></div>
+      <div id="acp_rej"><button id="reject"><img src="./images/cancel_icon.svg " alt="Reject"></button><button id="accept"><img src="./images/tick_icon.svg" alt="accpet"></button></div>
+    </div>
+    <div id="patient_list">
+      <img src="../Assets/Images/medicine.png" height="46px" width="52px" alt="Photo">
+      <div id="pt_detail"><h4>Samir Khadka</h4><h5>Booking on <span id="ap_date">5 oct 2024</span></h5></div>
+      <div id="acp_rej"><button id="reject" ><img src="./images/cancel_icon.svg " alt="Reject"></button><button id="accept"><img src="./images/tick_icon.svg" alt="accpet"></button></div>
+    </div>
+   </div>
+ 
+  </div>
+  </div>
+  
+</div>
+
+<script src="../Doctor/js/doctor_panel.js"></script>
+
+
+
+  
+  <script src="../Scripts/dr.js"></script>
+  <script src="../Scripts/showMenu.js"></script>
+
+
+
+  <!-- adding JSX to html page -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</body>
+
+</html>

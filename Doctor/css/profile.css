@@ -1,0 +1,325 @@
+body{
+    background: #e4e2e2 !important;
+}
+
+.menu-dropdown .menus {
+    height: 10rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_menu {
+    border: none;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    /* display: block; */
+    transition: all 0.2s ease-in-out;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav .menus {
+    justify-content: flex-end !important;
+    margin-right: 1rem !important;
+}
+.ap_time_btn {
+
+    margin-left: 13px;
+    margin-top: 8px;
+font-weight: 500;
+font-size: 0.9rem;
+height: 25px;
+width: 70px;
+border-radius: 15px;
+border: 1.5px solid #ada7a7;
+background: transparent;
+color: #5e5a5a;
+cursor: pointer;
+}
+
+.edit_btn{
+
+display: block;
+margin-left: 3rem;
+    margin-top: 1.5rem;
+font-weight: 500;
+font-size: 0.9rem;
+height: 25px;
+width: 70px;
+border-radius: 15px;
+/* border: 1.5px solid #ada7a7; */
+background: transparent;
+/* color: #5e5a5a; */
+cursor: pointer;
+
+
+}
+
+.edit_btn:hover{
+scale: 1.1;
+box-shadow: 9px 8px #c9d8ff;
+transition: all 0.2s ease-in-out;
+
+}
+#save_btn{
+display:none;
+margin-left: 3rem;
+    margin-top: 1.5rem;
+font-weight: 500;
+font-size: 0.9rem;
+height: 25px;
+width: 70px;
+border-radius: 15px;
+/* border: 1.5px solid #ada7a7; */
+background: #5f6fff;
+color: #fff;
+cursor: pointer;
+
+}
+#save_btn:hover{
+scale: 1.1;
+box-shadow: 9px 8px #c9d8ff;
+transition: all 0.2s ease-in-out;
+
+}
+nav .menus{
+justify-content: flex-end !important;
+margin-right: 1rem !important;
+}
+
+#container{
+/* border: 2px solid yellow; */
+display: flex;
+flex-direction: row;
+gap: 2rem;
+
+}
+
+#left{
+background: #fff;
+/* border: 2px solid red; */
+height: 90vh;
+width: 20vw;
+}
+
+#left a {
+    text-decoration: none !important;
+  }
+#dashboard{
+margin-top: 1.5rem;
+}
+
+.btn{
+border: none;
+width: 100%;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 0.8rem;
+height: 3rem;
+/* margin-left: 2rem; */
+color: #545151;
+background: #fff !important;
+}
+
+.left_icon{
+background: #fff !important;
+}
+.btn:hover{
+background-color:  #e4e2e2 !important;
+
+}
+.btn:visited{
+background-color:  #e4e2e2 !important;
+
+}
+
+.left_icon img{
+margin-left: 2rem;
+}
+.left_icon h3{
+font-weight: 650;
+}
+
+#right{
+/* border: 2px solid red; */
+width: fit-content;
+}
+
+#doctor_container{
+/* border: 2px solid greenyellow; */
+margin-top: 1rem;
+}
+.doctor-img {
+width: 15rem;
+height: 231px;
+border-radius: 0.8rem;
+background-color: #c9d8ff;
+}
+
+.doctor-img img {
+position: relative;
+top: 0.25rem;
+height: 226px;
+width: 100%;
+}
+
+.booking-info .dr-info {
+border: 1px solid #949494;
+border-radius: 0.8rem;
+padding: 1.4rem;
+}
+
+.dr-info{
+
+background: #fff;
+margin-top: 1rem;
+border-radius: 7px;
+height: 400px;
+text-indent: 2rem;
+}
+.dr-info .doc-name {
+font-size: 1.5rem !important;
+font-weight: 700;
+}
+
+.doc-name img{
+height: 20px;
+margin-top: 20px;
+}
+.dr-info .doc-desc {
+margin-top: 0rem !important;
+}
+.doc-desc .qualif {
+color: #949494;
+font-weight: 560 !important;
+}
+.doc-desc .exp {
+border: 1px solid #949494;
+padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+border-radius: 0.5rem;
+font-weight: 500 !important;
+font-size: 15px;
+color: #949494;
+}
+.dr-info .doc-about {
+margin-top: 0.8rem !important;
+text-align: justify;
+}
+.dr-info .doc-about span {
+font-weight: 580 !important;
+font-size: 1rem !important;
+}
+.dr-info .doc-about p {
+margin-top: 0.3rem;
+line-height: 1.5rem;
+font-size: 1rem;
+}
+.dr-info .doc-about .a-fee {
+font-weight: 580 !important;
+font-size: 1rem !important;
+margin-top: 1rem;
+}
+.dr-info .doc-about .a-address{
+font-weight: 580 !important;
+font-size: 1rem !important;
+margin-top: 0.4rem;
+
+}
+.about_doctor{
+    margin-right: 1rem;
+    width: 60vw;
+text-indent: 0rem;
+padding-left: 2rem;
+text-align: justify;
+overflow: hidden;
+text-overflow: ellipsis;
+resize: none;
+max-height: 137px;
+height: fit-content;
+}
+
+.about_doctor[contenteditable="true"],#doc-name[contenteditable="true"],#qualif[contenteditable="true"],#exp[contenteditable="true"],#fee[contenteditable="true"],#address[contenteditable="true"]{
+white-space: normal; /* Allow text wrapping when editing */
+        overflow: auto; 
+        text-overflow: clip;
+        user-select: auto;
+        border-radius: 7px;
+        border: 1px solid #7d7979 ;
+        /* color: #5e5a5a; */
+
+}
+
+.doc-about label{
+font-weight: 580 !important;
+font-size: 1rem !important;
+margin-top: 1rem;
+}
+input[type="checkbox"]{
+margin-top: 1rem;
+margin-left: 2rem;
+
+}
+input[type="checkbox"]:checked {
+        background-color: #5f6fff;
+        border: 1px solid #5f6fff;
+        accent-color:#5f6fff;
+        
+    }
+#upload_pic{
+    display: none;
+}
+    .Custom_Profile{
+        /* display: inline-block; */
+        display: none;
+        padding: 10px 20px;
+        background-color: #5f6fff;
+        color: white;
+        font-size: 16px;
+        border-radius: 7px;
+        cursor: pointer;
+        /* transition: 0.3s; */
+        position: relative;
+        bottom: 2.8rem;
+        left: 2.5rem;
+
+    }
+
+    .Custom_Profile:hover{
+        scale: 1;
+        background-color: #485aff;
+        transition: all 0.2s ease-in-out;
+    }
+    @media (max-width: 768px) {
+        .doc-desc .exp {
+            margin-left: 2rem !important;
+            width: fit-content;
+        }
+    }
+
+    @media (max-width:518px){
+        .about_doctor{
+
+            width: 70vw;
+        }
+    }
+    @media (max-width:402px){
+        .about_doctor{
+
+            width: 72vw;
+        }
+        input[type="checkbox"] {
+            margin-top: 0.5rem;
+            margin-left: 2rem;
+        }
+        .dr-info .doc-about .a-fee {
+            font-weight: 580 !important;
+            font-size: 1rem !important;
+            margin-top: 0.5rem;
+        }
+    }
